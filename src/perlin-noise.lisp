@@ -14,6 +14,8 @@
 
 (in-package :black-tie)
 
+(eval-when (:compile-toplevel :execute)
+  (setf *read-default-float-format* 'single-float))
 
 ;;;# Reference Implementation (don't change it unless it's incorrect)
 

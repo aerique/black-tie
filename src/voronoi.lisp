@@ -25,7 +25,7 @@
 
 (defmethod initialize-instance :after ((v2d voronoi-2d) &key)
   (let* ((psqrt (floor (sqrt (number-of-points v2d))))
-         (1/p (/ 1.0 psqrt)))
+         (1/p (/ 1.0f0 psqrt)))
     (setf (slot-value v2d '1/p) 1/p)
     (setf (slot-value v2d 'points) (make-array (list psqrt psqrt)))
     (setf (slot-value v2d 'psqrt) psqrt)

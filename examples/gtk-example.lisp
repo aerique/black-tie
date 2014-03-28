@@ -99,7 +99,7 @@
             do (loop for x from 0 below width by quality
                      for offset = (+ (* y width channels) (* x channels))
                      for xpn = (coerce (/ (+ x sbx) width zoom) 'single-float)
-                     for c = (/ (+ (black-tie:perlin-noise-sf xpn ypn 0.0) 1)
+                     for c = (/ (+ (black-tie:perlin-noise-sf xpn ypn 0.0f0) 1)
                                 2)
                      for r = (floor (* c red))
                      for g = (floor (* c green))
@@ -133,6 +133,6 @@
     (setf (gtk:spin-button-value (get-widget "green")) 255)
     (setf (gtk:spin-button-value (get-widget "blue")) 255)
     (setf (gtk:spin-button-value (get-widget "quality")) 4)
-    (setf (gtk:spin-button-value (get-widget "zoom")) 0.2)
+    (setf (gtk:spin-button-value (get-widget "zoom")) 0.2f0)
     (gtk:widget-show (get-widget "top_level") :all t))
   (noisificate))
