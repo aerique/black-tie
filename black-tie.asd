@@ -9,7 +9,10 @@
 (in-package :cl-user)
 
 (asdf:defsystem :black-tie
-  :version "0.1a"
+  :author "Erik Winkels <aerique@xs4all.nl>"
+  :version "0.2"
+  :license "BSD"
+  :description "Noise library for Common Lisp."
   :components ((:module src
                 :serial t
                 :components ((:file "package")
