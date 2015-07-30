@@ -1,6 +1,6 @@
 # Black Tie
 
-**status:** active
+**status:** active [![Quicklisp](http://quickdocs.org/badge/black-tie.svg)](http://quickdocs.org/black-tie/)
 
 
 ## A noise library in Common Lisp
