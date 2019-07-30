@@ -2,6 +2,10 @@
 
 **status:** active [![Quicklisp](http://quickdocs.org/badge/black-tie.svg)](http://quickdocs.org/black-tie/)
 
+The canonical home page for this project is: https://git.sr.ht/~aerique/black-tie
+
+(The library is also pushed to GitLab and GitHub but those sites are not monitored for support.)
+
 
 ## A noise library in Common Lisp
 
