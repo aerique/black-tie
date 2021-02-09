@@ -29,6 +29,14 @@ It offers both heavily optimized (tested only on SBCL so far) and
 reference implementations if they are available.
 
 
+### To Do
+
+From Matrix #lispgamedev:matrix.org:
+
+> If anything, just grep for safety 0 and remove that ASAP :)
+
+> Or at least do it in a (locally (declare ..)) sparingly like around array accesses where you are sure your indices are correct.
+
 ### License
 
 This project is released under the simplified
